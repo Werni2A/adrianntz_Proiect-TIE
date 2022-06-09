@@ -1,0 +1,61 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    NC DRILL Log                                                     )
+(                                                                     )
+(    Drawing          : caleidoscop1.brd                              )
+(    Software Version : 17.4S012                                      )
+(    Date/Time        : Tue Jun  1 19:20:36 2021                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+
+ Processing NC Parameters file 'nc_param.txt' ...
+
+ NC PARAMETERS
+ -------------
+
+ FORMAT   		2.5
+ MACHINE-OFFSET		x:0.00000	y:0.00000   (inch)
+ FEEDRATE		1
+ COORDINATES		ABSOLUTE
+ OUTPUT-UNITS		ENGLISH
+ TOOL-ORDER		INCREASING
+ REPEAT-CODES		YES
+ SUPPRESS-LEAD-ZEROES	NO
+ SUPPRESS-TRAIL-ZEROES	NO
+ SUPPRESS-EQUAL		NO
+ TOOL-SELECT		NO
+ HEADER			none
+ LEADER			12
+ CODE			ASCII
+ SEPARATE		NO
+ SEPARATE-ROUTING	NO
+ OPTIMIZE_DRILLING	NO
+ ENHANCED_EXCELLON	NO
+ SCALE			1.000000
+
+ WARNING(SPMHMF-358): Design precision is the same as that of the drill output file data.
+ WARNING(SPMHMF-359): Data rounding errors may still be possible.
+
+
+ Drill files being output to directory 'C:/Users/adyco/OneDrive - Universitatea Politehnica Bucuresti/POLI/ANUL 2 SEM 2/Tehnologii de interconectare in electronica/Proiect/Fisiere proiect/NC_drill' ...
+
+
+
+     'caleidoscop1-1-2.drl' created for holes connecting TOP and BOTTOM
+     ------------------------------------------------------------------
+
+           Num     Size      +/- Tolerance     Plating   Quantity
+
+            1.  13.0000    0.0000/  0.0000      PLATED         23
+            2.  25.0000    0.0000/  0.0000      PLATED          2
+            3.  31.0000    0.0000/  0.0000      PLATED          6
+            4.  36.0000    0.0000/  0.0000      PLATED         24
+            5.  42.0000    0.0000/  0.0000      PLATED          8
+            6. 125.0000    0.0000/  0.0000  NON_PLATED          4
+
+     ---- Total holes:                                         67
+
+     ---- Total head travel:              3.98 feet (1.21 meters)
+

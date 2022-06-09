@@ -1,0 +1,188 @@
+Wire List
+
+Proiect TIE 2021 "Caleidoscop electronic"     Revised: Tuesday, June 01, 2021
+\                                             Revision: 
+Facultatea de Electronica, Telecomunicatii si Tehnologia Informatiei
+
+
+
+
+
+<<< Component List >>>
+4n7                           C1        CAPCK06
+4n7                           C2        CAPCK06
+1u                            C3        CAP196
+1u                            C4        CAP196
+1N4148                        D1        DO35
+LED BI-COLOUR                 D2        jumper3
+LED BI-COLOUR                 D3        jumper3
+LED BI-COLOUR                 D4        jumper3
+LED BI-COLOUR                 D5        jumper3
+LED BI-COLOUR                 D6        jumper3
+LED BI-COLOUR                 D7        jumper3
+33k                           R1        res400
+33k                           R2        res400
+150                           R3        smr1206
+150                           R4        smr1206
+150                           R5        smr1206
+150                           R6        smr1206
+150                           R7        smr1206
+150                           R8        smr1206
+100k                          SR1       vres58
+100k                          SR2       vres58
+4033                          U5        SOIC16
+4033                          U6        SOIC16
+4001                          U7        soic14
+CON2                          VCC1      jumper2
+
+<<< Wire List >>>
+
+  NODE  REFERENCE    PIN #   PIN NAME           PIN TYPE       PART VALUE
+
+[00001] +9V
+        C1              1       1               Passive        4n7
+        C2              1       1               Passive        4n7
+        U5              16      VCC             Power          4033
+        U6              16      VCC             Power          4033
+        VCC1            1       1               Passive        CON2
+        U7              14      VDD             Power          4001
+
+[00002] GND
+        C1              2       2               Passive        4n7
+        C2              2       2               Passive        4n7
+        R3              1       1               Passive        150
+        R4              2       2               Passive        150
+        R5              2       2               Passive        150
+        R6              2       2               Passive        150
+        R7              2       2               Passive        150
+        R8              2       2               Passive        150
+        U5              2       CLKINH          Input          4033
+        U5              15      RST             Input          4033
+        U5              14      LT              Input          4033
+        U5              8       GND             Power          4033
+        U6              2       CLKINH          Input          4033
+        U6              15      RST             Input          4033
+        U6              14      LT              Input          4033
+        U6              8       GND             Power          4033
+        VCC1            2       2               Passive        CON2
+        U7              7       GND             Power          4001
+
+[00003] N04758
+        U7              1       I0_A            Input          4001
+        U7              2       I1_A            Input          4001
+        U7              4       O_B             Output         4001
+        SR1             1       A               Passive        100k
+
+[00004] N05153
+        C3              1       1               Passive        1u
+        R1              2       2               Passive        33k
+        SR1             2       WIPER           Passive        100k
+
+[00005] N07928
+        D1              2       A               Passive        1N4148
+        U6              7       G               Output         4033
+
+[00006] N09153
+        C3              2       2               Passive        1u
+        U5              1       CLK             Input          4033
+        U7              3       O_A             Output         4001
+
+[00007] N09380
+        C4              2       2               Passive        1u
+        U6              1       CLK             Input          4033
+        U7              11      O_D             Output         4001
+
+[00008] N09448
+        R2              2       2               Passive        33k
+        C4              1       1               Passive        1u
+        SR2             2       WIPER           Passive        100k
+
+[00009] N10890
+        U6              6       F               Output         4033
+        D7              2       ANODE1          Passive        LED BI-COLOUR
+
+[00010] N10905
+        U6              13      C               Output         4033
+        D4              2       ANODE1          Passive        LED BI-COLOUR
+
+[00011] N10928
+        U6              10      A               Output         4033
+        D2              2       ANODE1          Passive        LED BI-COLOUR
+
+[00012] N10992
+        U6              12      B               Output         4033
+        D3              2       ANODE1          Passive        LED BI-COLOUR
+
+[00013] N134251
+        R3              2       2               Passive        150
+        D2              3       CATHODE         Passive        LED BI-COLOUR
+
+[00014] N137160
+        R4              1       1               Passive        150
+        D3              3       CATHODE         Passive        LED BI-COLOUR
+
+[00015] N138190
+        R5              1       1               Passive        150
+        D4              3       CATHODE         Passive        LED BI-COLOUR
+
+[00016] N139250
+        R6              1       1               Passive        150
+        D5              3       CATHODE         Passive        LED BI-COLOUR
+
+[00017] N140280
+        R7              1       1               Passive        150
+        D6              3       CATHODE         Passive        LED BI-COLOUR
+
+[00018] N141330
+        R8              1       1               Passive        150
+        D7              3       CATHODE         Passive        LED BI-COLOUR
+
+[00019] N15766
+        U5              13      C               Output         4033
+        D4              1       ANODE           Passive        LED BI-COLOUR
+
+[00020] N17402
+        U6              9       D               Output         4033
+        D5              2       ANODE1          Passive        LED BI-COLOUR
+
+[00021] N17408
+        U6              11      E               Output         4033
+        D6              2       ANODE1          Passive        LED BI-COLOUR
+
+[00022] N18189
+        D1              1       K               Passive        1N4148
+        R1              1       1               Passive        33k
+        U7              5       I0_B            Input          4001
+        U7              6       I1_B            Input          4001
+
+[00023] N23206
+        R2              1       1               Passive        33k
+        U7              8       I0_C            Input          4001
+        U7              9       I1_C            Input          4001
+
+[00024] N27043
+        U5              10      A               Output         4033
+        D2              1       ANODE           Passive        LED BI-COLOUR
+
+[00025] N29756
+        U5              9       D               Output         4033
+        D5              1       ANODE           Passive        LED BI-COLOUR
+
+[00026] N29910
+        U5              11      E               Output         4033
+        D6              1       ANODE           Passive        LED BI-COLOUR
+
+[00027] N29955
+        U5              6       F               Output         4033
+        D7              1       ANODE           Passive        LED BI-COLOUR
+
+[00028] N31126
+        U5              12      B               Output         4033
+        D3              1       ANODE           Passive        LED BI-COLOUR
+
+[00029] N35604
+        U7              10      O_C             Output         4001
+        U7              12      I0_D            Input          4001
+        U7              13      I1_D            Input          4001
+        SR2             1       A               Passive        100k
+
